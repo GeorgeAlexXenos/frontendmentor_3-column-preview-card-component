@@ -24,4 +24,4 @@ Users should be able to:
 
 ## Author
 
-- [@yourusername](https://www.frontendmentor.io/profile/GeorgeAlexXenos)
+- [@GeorgeAlexXenos](https://www.frontendmentor.io/profile/GeorgeAlexXenos)
