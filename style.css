@@ -24,6 +24,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 5rem 0;
+  background-color: var(--veryLightGray);
 }
 
 .container {
@@ -31,7 +32,7 @@ body {
   flex-direction: column;
   border-radius: 0.5rem;
   overflow: hidden;
-  box-shadow: 2px 1px 50px rgba(0, 0, 0, 0.308);
+  box-shadow: 2px 1px 50px rgba(0, 0, 0, 0.2);
 }
 
 .item {
