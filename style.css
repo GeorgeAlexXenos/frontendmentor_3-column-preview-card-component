@@ -1,0 +1,122 @@
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+:root {
+  /* === Primary === */
+  --brightOrange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+  /* === Neutral === */
+  /* paragraphs  */
+  --transparentWhite: hsla(0, 0%, 100%, 0.75);
+  /* backround, headings, buttons  */
+  --veryLightGray: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 2px 1px 50px rgba(0, 0, 0, 0.308);
+}
+
+.item {
+  padding: 2rem 0 2rem 2.5rem;
+  min-width: 285px;
+}
+
+.item1 {
+  background-color: var(--brightOrange);
+}
+.item2 {
+  background-color: var(--darkCyan);
+}
+.item3 {
+  background-color: var(--veryDarkCyan);
+}
+
+.item h1 {
+  max-width: 200px;
+  line-height: 1.5rem;
+  color: white;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 1.9rem 0;
+}
+
+.item p {
+  max-width: 200px;
+  line-height: 1.5rem;
+  color: var(--transparentWhite);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.8rem;
+}
+
+button {
+  margin-top: 1.3rem;
+  margin-bottom: 0.4rem;
+  padding: 0.8rem 1.4rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--veryLightGray);
+  font-family: "Lexend Deca", sans-serif;
+  cursor: pointer;
+  border: 2px solid var(--veryLightGray);
+}
+button:active {
+  color: white;
+  background-color: transparent;
+}
+.button1 {
+  color: var(--brightOrange);
+}
+.button2 {
+  color: var(--darkCyan);
+}
+.button3 {
+  color: var(--veryDarkCyan);
+}
+
+/* ---------media quaries-------- */
+
+@media screen and (min-width: 900px) {
+  body {
+    align-items: center;
+  }
+  .container {
+    flex-direction: row;
+    align-items: center;
+    height: 510px;
+  }
+  .item {
+    padding-top: 2.6rem;
+    height: 100%;
+  }
+  .item img {
+    margin-top: 0.4rem;
+  }
+  .item h1 {
+    font-size: 2.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .item p {
+    max-width: 180px;
+    margin-bottom: 5rem;
+  }
+} ;
